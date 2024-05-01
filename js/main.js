@@ -237,3 +237,24 @@ document.addEventListener('DOMContentLoaded', function () {
     isDragging = false;
     carousel.style.cursor = 'grab';
   });
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('whatsapp_formatador').addEventListener('input', function (e) {
+        let input = e.target.value.replace(/\D/g, '').substring(0, 11); // Remove caracteres não numéricos e limita a 11 caracteres
+        let formattedInput = '';
+
+        if (input.length > 0) {
+            formattedInput += '(' + input.substring(0, 2) + ')'; // Adiciona o código de área
+        }
+        if (input.length > 2) {
+            formattedInput += ' ' + input.substring(2, 7); // Adiciona os primeiros cinco dígitos
+        }
+        if (input.length > 7) {
+            formattedInput += ' ' + input.substring(7); // Adiciona os últimos quatro dígitos
+        }
+
+        e.target.value = formattedInput;
+    });
+});
