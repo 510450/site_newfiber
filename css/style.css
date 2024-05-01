@@ -2074,7 +2074,7 @@ pre code {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: 0;
+  border-radius: 30px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -2088,7 +2088,9 @@ pre code {
   background-color: transparent;
   border: 0;
 }
-
+label{
+  color: black;
+}
 .form-control:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #495057;
@@ -2099,7 +2101,7 @@ pre code {
   background-color: #fff;
   border-color: #ffa480;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 72, 0, 0.25);
+  box-shadow: 0 0 0 0.2rem #ff8f067e;
 }
 
 .form-control::placeholder {
