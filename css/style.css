@@ -10099,6 +10099,10 @@ p,
   background-position: center;
 }
 
-.card-content {
+
+.card-bene .card-content {
   padding: 15px;
+  margin-top: 100%; /* Alinha o conteúdo na parte inferior */
+  border-radius: 0 0 10px 10px;
+  color: white;
 }
