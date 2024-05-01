@@ -10068,3 +10068,37 @@ p,
   width: 400px;
   margin-bottom: 15px; /* Adiciona margem inferior entre as linhas */
 }
+.slider_beneficios {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  cursor: grab; /* Cursor de mãozinha quando não está arrastando */
+  user-select: none;
+}
+.slider_beneficios::-webkit-scrollbar{
+  display: none;
+}
+
+.slider_beneficios:active {
+  cursor: grabbing; /* Cursor de mãozinha quando está arrastando */
+}
+
+.card-bene {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 350px; /* Ajuste a altura conforme necessário */
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  scroll-snap-align: start;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 15px;
+}

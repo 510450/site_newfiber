@@ -155,3 +155,47 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
+
+
+  // Função para rolar automaticamente os cards
+  function scrollSlider() {
+    const slider = document.querySelector('.slider_beneficios');
+    const cards = document.querySelectorAll('.card');
+    let scrollAmount = 0;
+    const cardWidth = cards[0].offsetWidth + 20; // Largura do card + margem direita
+
+    setInterval(() => {
+      slider.scrollTo({
+        top: 0,
+        left: (scrollAmount += cardWidth),
+        behavior: 'smooth'
+      });
+
+      if (scrollAmount >= (cards.length - 1) * cardWidth) {
+        scrollAmount = 0;
+      }
+    }, 2000); // Altere o valor para ajustar a velocidade da rolagem
+  }
+
+  window.onload = scrollSlider;
+
+  let isDragging = false;
+  let startPosition = 0;
+  let currentScrollLeft = 0;
+
+  function startDrag(event) {
+    isDragging = true;
+    startPosition = event.clientX;
+    currentScrollLeft = document.querySelector('.slider_beneficios').scrollLeft;
+  }
+
+  function dragging(event) {
+    if (!isDragging) return;
+    const slider = document.querySelector('.slider_beneficios');
+    const scrollDistance = event.clientX - startPosition;
+    slider.scrollLeft = currentScrollLeft - scrollDistance;
+  }
+
+  function endDrag(event) {
+    isDragging = false;
+  }
