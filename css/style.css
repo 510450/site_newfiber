@@ -363,6 +363,10 @@ display: none;
     z-index: 9999999999999 !important;
     transition: left 0.3s ease; /* Adicione uma transição suave */
   }
+  body::-webkit-scrollbar {
+display: none;
+  }
+  
  } 
  
 .image_header_logo{
@@ -10105,4 +10109,7 @@ p,
   margin-top: 100%; /* Alinha o conteúdo na parte inferior */
   border-radius: 0 0 10px 10px;
   color: white;
+}
+.card-bene:hover {
+  transform: scale(1px);
 }
