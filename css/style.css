@@ -10043,3 +10043,27 @@ p,
 }
   }
   
+
+  .button_price_prod{
+    padding: 7px;
+    border: none;
+    background: linear-gradient(45deg, #ff9006, #ffa229);
+    border-radius: 30px;
+    width: 200px;
+  }
+
+.button_price_prod:hover{
+  background: linear-gradient(45deg, #33EBC7, #33CAEB) ;
+  transition: 0.5s;
+
+}.price h1 {
+  display: inline-block;
+}
+
+.askjdnasdnausdhnaiosdbna{
+  border: 1px solid #05111960;
+  height: 820px;
+  border-radius: 10px;
+  width: 400px;
+  margin-bottom: 15px; /* Adiciona margem inferior entre as linhas */
+}

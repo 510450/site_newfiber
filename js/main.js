@@ -133,3 +133,25 @@ document.addEventListener('DOMContentLoaded', function () {
       setTimeout(showSlides,1000); // Troca a cada 5 segundos
     }
   });
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const navItems = document.querySelectorAll('.nav-item');
+
+    navItems.forEach(item => {
+      item.addEventListener('click', function(event) {
+        event.preventDefault();
+        const target = this.getAttribute('data-target');
+        scrollToSection(target);
+      });
+    });
+
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
