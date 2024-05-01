@@ -9543,26 +9543,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 900 !important;
 }
 
-h1,
-.font-weight-bolder {
-  font-weight: 800 !important;
-}
 
-h2,
-h3,
-.font-weight-bold {
-  font-weight: 700 !important;
-}
-
-h4,
-h5 .font-weight-semi-bold {
-  font-weight: 600 !important;
-}
-
-h6,
-.font-weight-medium {
-  font-weight: 500 !important;
-}
 
 p,
 .font-weight-normal {
@@ -10128,9 +10109,97 @@ p,
 .button_indicar{
   padding: 15px;border:2px solid white;border-radius: 30px;background-color: white;text-align: center;font-weight: 600;
 }
+.button_indicar a{
+  color: black;
+  height: 100%;
+  width:100%;
+}
 .button_indicar:hover{
   border: 2px solid white;
   background-color: transparent;
   color: white;
   transition: 0.3s;
+}
+
+.button_indicar a:hover{
+  color: white;
+}
+
+.asjkdbnaiusdbasdba {
+  position: relative;
+  width: 100%;
+}
+
+.asjkdbnaiusdbasdba img{
+  width: 100%;
+  border-bottom-left-radius: 30%;
+}
+
+.card-faq .card-header{
+  background-color: #F0F0F0F0;
+  padding: 10px;border-radius: 10px;
+  color: black;
+}
+.card-faq .card-body{
+  color: black;
+}
+.card-faq button{
+ border: none;
+ font-size: 16px;
+
+  color: black;
+}
+
+.card-faq button:focus, .card-faq button:active, .card-faq button::before, .card-faq button::after {
+  outline: none;
+}
+
+.card-faq{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.footer{
+  background-color: #F5F5F5;
+  padding: 25px;
+}
+.col-md-3 a{
+  margin-top: 15px;
+}
+@keyframes hideAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.hide-navigation {
+  animation: hideAnimation 0.2s forwards;
+}
+
+
+
+.text-animation {
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 10s infinite;
+  font-weight: bolder;
+  color: transparent; /* Faz o texto transparente */
+  -webkit-text-stroke: 2px #0BA551; /* Adiciona um contorno à letra */
+  text-stroke: 2px #0BA551; /* Adiciona um contorno à letra */
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    color: transparent;
+  }
+  100% {
+    width: 100%;
+    color: transparent;
+  }
 }

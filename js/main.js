@@ -199,3 +199,17 @@ document.addEventListener('DOMContentLoaded', function () {
   function endDrag(event) {
     isDragging = false;
   }
+
+  window.addEventListener('scroll', function() {
+    var navigation = document.getElementById('navigation');
+    var distanceToBottom = document.documentElement.scrollHeight - (window.innerHeight + window.scrollY);
+  
+    if (distanceToBottom < 500) {
+      navigation.classList.add('hide-navigation');
+    } else {
+      navigation.classList.remove('hide-navigation');
+    }
+  });
+
+
+  
