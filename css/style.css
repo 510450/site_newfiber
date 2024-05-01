@@ -10064,6 +10064,7 @@ p,
   border: 1px solid #05111960;
   height: 820px;
   border-radius: 10px;
-  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  width: 370px;
   margin-bottom: 15px; /* Adiciona margem inferior entre as linhas */
 }
