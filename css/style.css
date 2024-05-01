@@ -341,9 +341,10 @@ legend {
     bottom: 0 !important  ;
   }
   .modal-primary img{
-display: none;
+    display: none;
   }
 }
+
 @media (max-width: 500px) {
   .tamanho____{
     width:50px !important;
@@ -364,9 +365,15 @@ display: none;
     transition: left 0.3s ease; /* Adicione uma transição suave */
   }
   body::-webkit-scrollbar {
-display: none;
+    display: none;
   }
-  
+  .text-container-banner{
+    position: absolute;
+    bottom: 18%;
+  }
+  .text-container-banner h5{
+    width: 300px;
+  }
  } 
  
 .image_header_logo{
@@ -10112,4 +10119,18 @@ p,
 }
 .card-bene:hover {
   transform: scale(1px);
+}
+.askodnasjdasiodhasid{
+  width: 350px;margin-top:20px;
+
+}
+
+.button_indicar{
+  padding: 15px;border:2px solid white;border-radius: 30px;background-color: white;text-align: center;font-weight: 600;
+}
+.button_indicar:hover{
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s;
 }
