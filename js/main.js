@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   document.addEventListener("DOMContentLoaded", function() {
-    const navItems = document.querySelectorAll('.nav-item');
+    const navItems = document.querySelectorAll('.nav-item-page');
 
     navItems.forEach(item => {
       item.addEventListener('click', function(event) {
