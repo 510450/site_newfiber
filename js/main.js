@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (scrollAmount >= (cards.length - 1) * cardWidth) {
         scrollAmount = 0;
       }
-    }, 5000); // Altere o valor para ajustar a velocidade da rolagem
+    }, 10000); // Altere o valor para ajustar a velocidade da rolagem
   }
 
   window.onload = scrollSlider;
