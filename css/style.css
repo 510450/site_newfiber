@@ -10203,3 +10203,82 @@ p,
     color: transparent;
   }
 }
+
+
+
+.button_mais_telefone{
+  font-weight: bold;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff9006, #FFE506);
+  border: 3px solid #ff9006;
+  text-transform: uppercase;
+  height: 50px;
+  width: 250px;
+}
+
+.carousel_max {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  cursor: grab; /* Cursor de mãozinha quando não está arrastando */
+  user-select: none;
+  
+  
+}
+.carousel_max_item{
+  height: 350px;
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  background-color: red;
+  margin-right: 15px;
+  border-radius: 10px;
+  flex: 0 0 250px; /* Largura fixa de 150px para cada item */
+
+}
+.carousel_max::-webkit-scrollbar{
+  display: none;
+}
+
+.carousel_max:active {
+  cursor: grabbing; /* Cursor de mãozinha quando está arrastando */
+}
+
+.carousel_max {
+  display: flex;
+  overflow-x: auto; /* ou overflow-x: scroll; */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  cursor: grab;
+  user-select: none;
+}
+
+
+
+/* Se desejar remover a margem esquerda do primeiro item */
+.carousel_max_item:first-child {
+  margin-left: 0;
+  border-radius: 15px;
+
+}
+
+/* Se desejar adicionar um espaço entre os itens */
+/* .carousel_max_item:not(:last-child) {
+  margin-right: 10px;
+} */
+
+/* Ocultar as barras de rolagem */
+.carousel_max::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cursor ao arrastar */
+.carousel_max:active {
+  cursor: grabbing;
+  border-radius: 10px;
+
+}

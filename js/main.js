@@ -187,6 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
     isDragging = true;
     startPosition = event.clientX;
     currentScrollLeft = document.querySelector('.slider_beneficios').scrollLeft;
+
   }
 
   function dragging(event) {
@@ -212,4 +213,27 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-  
+    const carousel = document.querySelector('.carousel_max');
+
+  carousel.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startPosition = e.clientX;
+    startScroll = carousel.scrollLeft;
+    carousel.style.cursor = 'grabbing';
+  });
+
+  carousel.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const deltaX = e.clientX - startPosition;
+    carousel.scrollLeft = startScroll - deltaX;
+  });
+
+  carousel.addEventListener('mouseup', () => {
+    isDragging = false;
+    carousel.style.cursor = 'grab';
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    isDragging = false;
+    carousel.style.cursor = 'grab';
+  });
