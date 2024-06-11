@@ -5,6 +5,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -109,6 +110,8 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+
 }
 
 p {
@@ -353,7 +356,7 @@ legend {
 }
 @media (max-width: 450px) {
   .image_header_logo {
-    height: 70px !important;
+    height: 60px !important;
   }
   .xiasdaksdjuigaysdvasjkdn {
     width: 100%;
@@ -2967,7 +2970,18 @@ fieldset:disabled a.btn {
   color: #ff9006;
   background-color: transparent;
 }
-
+#verMais {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.623);
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  flex-direction: column;
+  border-radius: 30px;
+}
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
@@ -3363,6 +3377,14 @@ input[type="button"].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
+.autoatendimento-container .cards-container .card {
+  background-color:rgba(177, 93, 3, 0.9); /* Just an example style */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Adicionado para ocultar o conteúdo além do cartão */
+}
 .dropdown-menu-left {
   right: auto;
   left: 0;
@@ -4359,14 +4381,35 @@ input[type="button"].btn-block {
 
 .navbar {
   position: relative;
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  user-select: none;
+  background-color:#ff7316;
   z-index: 1 !important;
 }
-
+.buttonAreaCliente{
+  background: linear-gradient(45deg, #06ff76d5, #06ffd6ad);
+  /* border: 1px solid #ff9006; */
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.buttonAreaCliente:hover{
+  color: black;
+  text-decoration: none;
+}
 .navbar .container,
 .navbar .container-fluid,
 .navbar .container-sm,
@@ -10176,7 +10219,7 @@ p,
 }
 
 .user-icon {
-  background-color: #ff9006;
+  background-color: #000;
   color: white;
   height: 30px;
   width: 30px;
@@ -10445,7 +10488,9 @@ p,
     background-color: #ff9006;
   }
 }
-
+.text-orange{
+  color: #ff9006;
+}
 .button_price_prod {
   padding: 7px;
   border: none;
@@ -10455,7 +10500,7 @@ p,
 }
 
 .button_price_prod:hover {
-  background: linear-gradient(45deg, #33ebc7, #33caeb);
+  background: linear-gradient(45deg, #ff6100, #ffa83c);
   transition: 0.5s;
 }
 .price h1 {
@@ -10511,10 +10556,58 @@ p,
   transform: scale(1px);
 }
 .askodnasjdasiodhasid {
-  width: 350px;
   margin-top: 20px;
 }
+.autoatendimento-container {
+  color: white;
+  user-select: none;
+  background: url('/img/banner/bannerAlt.png');
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
 
+.autoatendimento-container .cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.autoatendimento-container .cards-container .card {
+  background-color:rgb(85, 46, 5, 0.9); /* Just an example style */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Adicionado para ocultar o conteúdo além do cartão */
+}
+
+.autoatendimento-container .cards-container .card .blur {
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.autoatendimento-container .cards-container .card .conteiner {
+  z-index: 2;
+  position: relative;
+}
+
+.autoatendimento-container h3{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  
+}
+.autoatendimento-container h5{
+  font-size: 18px;
+  
+}
 .button_indicar {
   padding: 15px;
   border: 2px solid white;
@@ -10696,4 +10789,85 @@ p,
   align-items: center;
   margin: auto;
 
+}
+.oihasdbaskjdh{
+  color:#002b3d;
+}
+.button_primary_yellow{
+  background-color: #ffd22d;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+.containerLinksBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ff7316;
+}
+
+.containerLinksBanner ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.containerLinksBanner li {
+  list-style: none;
+  color: black;
+  height: 100px;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerLinksBanner li a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #ff7316;
+
+}
+.asdasdasd{
+  display: flex;
+}
+.aling-container-tellfixo{
+  width: 60%;
+}
+@media (max-width:800px){
+  .containerLinksBanner li a{
+    text-align: center;
+  }
+  .asdasdasd{
+    display: block !important;
+  }
+  .asdasdasd .text-orange{
+    margin-top: 10px;
+  }
+  .aling-container-tellfixo{
+    width: 105%;
+  }
+}
+.containerLinksBanner li a:hover{
+  background-color: #552e05;
+}
+.containerLinksBanner span {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: 550;
+  flex-direction: column;
+  justify-content: center;
+}
+.containerLinksBanner span img{
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }

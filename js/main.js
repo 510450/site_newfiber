@@ -90,9 +90,9 @@
 
 
 
-$(document).ready(function(){
-    $("#myModal").modal('show');
-  });
+// $(document).ready(function(){
+//     $("#myModal").modal('show');
+//   });
 
 
 
@@ -257,4 +257,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
         e.target.value = formattedInput;
     });
+});
+
+// script.js
+
+// script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+  const banner = document.getElementById("home");
+  const verMais = document.getElementById("verMais");
+  let timer;
+
+  function startTimer() {
+      timer = setTimeout(() => {
+          verMais.style.display = "block";
+      }, 3000); // 3 segundos
+  }
+
+  function resetTimer() {
+      clearTimeout(timer);
+      verMais.style.display = "none";
+      startTimer();
+  }
+
+  function handleVisibilityChange() {
+      if (document.hidden) {
+          clearTimeout(timer);
+      } else {
+          resetTimer();
+      }
+  }
+
+  document.addEventListener("visibilitychange", handleVisibilityChange);
+  window.addEventListener("mousemove", resetTimer);
+  window.addEventListener("keypress", resetTimer);
+
+  startTimer();
 });
