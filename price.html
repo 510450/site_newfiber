@@ -1,331 +1,1149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <title>FASTER - Logistics Company Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+  <meta charset="utf-8" />
+  <title>NEW INTERNET | Internet, TV por Assinatura, Serviços Digitais e mais</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Free HTML Templates" name="keywords" />
+  <link rel="shortcut icon" href="/img/favicon/favicon-32x32.png" type="image/x-icon">
+  <meta content="Free HTML Templates" name="description" />
+  <meta name="google" content="notranslate" />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/fc1c19f0f3.js" crossorigin="anonymous"></script>
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!--  BOX ICONS -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
-                    <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="text-white pl-2" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
+  <div class="overlay_offcanvas"></div>
 
+  <div class="offcanvas-menu">
+    <div class="offcanvas-body">
+      <div class="offcanvas-head">
+        <h1 style="color: #ff9006; border-bottom: 5px solid #ff9006">MENU</h1>
+      </div>
+      <a class="close-toggle"><i class="bx bx-x"></i></a>
 
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 display-5 text-uppercase text-primary"><i class="fa fa-truck mr-2"></i>Faster</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+      <ul class="mt-5">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="https://www.minhaconexao.com.br/">Teste de velocidade</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#beneficios">Sobre</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="container">
+        <button class="contato_button">Contato</button>
+      </div>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-1">
+            <button class="button-redesocial">
+              <i class="bx bxl-instagram"></i>
             </button>
-            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav m-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Service</a>
-                    <a href="price.html" class="nav-item nav-link active">Price</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="single.html" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Get A Quote</a>
-            </div>
-        </nav>
+          </div>
+          <div class="col-md-1">
+            <button class="button-redesocial">
+              <i class="bx bxl-whatsapp"></i>
+            </button>
+          </div>
+          <div class="col-md-1">
+            <button class="button-redesocial">
+              <i class="bx bxl-facebook"></i>
+            </button>
+          </div>
+          <div class="col-md-1">
+            <button class="button-redesocial">
+              <i class="bx bxl-linkedin"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade modal-primary position-fixed" id="myModal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="border: none;">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5 col-sm-12 mb-3 mb-sm-0">
+              <img src="img/modal/modal_banner.png" alt="" class="img-fluid" />
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <div class="mb-3">
+                <label for="">Nome <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="">Telefone Contato <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="">E-mail </label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="mt-2">
+                <button style="
+                      background-color: #06ff8b63;
+                      border: 1px solid #06ff8b;
+                      border-radius: 5px;
+                      width: 100%;
+                      padding: 10px;
+                      font-weight: bold;
+                      text-transform: uppercase;
+                    ">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Abrir Modal
+      </button> -->
+  <div id="navigation" class="xiasdaksdjuigaysdvasjkdn">
+
+    <a class="d-block nav-item  nav-item-page" data-target="home">
+      <div class="tamanho____"></div>
+      <div class="aajidhadbhgsdrf">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <div class="sdfhiasbduiasdharfgtw">Home</div>
+    </a>
+    <a href="" class="d-block nav-item  nav-item-page" data-target="planos">
+      <div class="tamanho____"></div>
+      <div class="aajidhadbhgsdrf">
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="sdfhiasbduiasdharfgtw">Planos</div>
+    </a>
+    <a href="" class="d-block nav-item nav-item-page" data-target="beneficios">
+      <div class="tamanho____"></div>
+      <div class="aajidhadbhgsdrf">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <div class="sdfhiasbduiasdharfgtw">Sobre</div>
+    </a>
+    <a href="https://wa.me/553732269519" class="d-block nav-item">
+      <div class="tamanho____"></div>
+      <div class="aajidhadbhgsdrf">
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <div class="sdfhiasbduiasdharfgtw">WhatsApp</div>
+    </a>
+    <a class="d-block nav-item menu-toggle" style="cursor: pointer;">
+      <div class="tamanho____"></div>
+      <div class="aajidhadbhgsdrf">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="sdfhiasbduiasdharfgtw">Menu</div>
+    </a>
+  </div>
+
+  <div id="home">
+
+
+    <nav class="navbar navbar-expand-lg py-3 py-lg-0 px-lg-5" id="home">
+      <a href="" target="_blank" class="navbar-brand ml-lg-3">
+        <h1 class="m-0 display-5 text-uppercase text-primary">
+          <img src="img/logoBranca.png" class="image_header_logo" alt="" />
+        </h1>
+      </a>
+      <a href="http://mks.newfiber.net.br/sac" target="_blank" class="buttonAreaCliente">
+        <div class="user-icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <span> área do cliente</span>
+      </a>
+    </nav>
     <!-- Navbar End -->
 
-
     <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid mb-5">
-        <div class="container text-center py-5">
-            <h1 class="text-white display-3">Price</h1>
-            <div class="d-inline-flex align-items-center text-white">
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
-                <i class="fa fa-circle px-3"></i>
-                <p class="m-0">Price</p>
-            </div>
-        </div>
+
+    <div class="banner">
+      <!--     <img class="image desktop" src="img/banner/desktop-image.jpg" alt="Desktop Image" /> -->
+      <img class="image desktop" src="img/banner/desktop-image.jpg" alt="Desktop Image" />
+
+      <img class="image mobile" src="img/banner/mobile-image.jpg" alt="Mobile Image" />
+      <div id="verMais">Ver mais <i class="fa-solid fa-arrow-down-long"></i></div>
     </div>
-    <!-- Header End -->
 
+    <div class="containerLinksBanner">
+      <ul>
+        <li>
+          <a href="/para-voce/internet/">
+            <span>
+              <div class="img">
+                <img src="img/v2/bannerLink/wifi.webp" alt="">
+              </div>
+              Internet Fibra
+            </span>
+          </a>
 
-    <!-- Pricing Plan Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="text-center pb-2">
-                <h6 class="text-primary text-uppercase font-weight-bold">Pricing Plan</h6>
-                <h1 class="mb-4">Affordable Pricing Packages</h1>
+        </li>
+        <li>
+          <a href="/para-voce/svas/">
+            <span>
+              <div class="img">
+                <img src="img/v2/bannerLink/mobile.webp" alt="">
+              </div>
+              Serviços Digitais
+            </span>
+          </a>
+
+        </li>
+        <li>
+          <a href="/monte-seu-pacote/">
+            <span>
+              <div class="img">
+                <img src="img/v2/bannerLink/combo.webp" alt="">
+              </div>
+              Monte seu pacote
+            </span>
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Header End -->
+
+  <!-- Testimonial Start -->
+  <div class="container-fluid py-5 mb-3" id="depoimentos">
+    <div class="container">
+      <div class="text-center pb-2">
+        <span class="mb-4" style="font-size: 25px; color: black; font-family: Poppins">Depoimento de
+          <span style="color: #ff9006"> nossos clientes</span></span>
+        <br />
+      </div>
+      <div class="owl-carousel testimonial-carousel mt-3">
+        <div class="position-relative bg-secondary p-4">
+          <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0"></i>
+          <div class="d-flex align-items-center mb-3">
+            <img class="img-fluid rounded-circle"
+              src="https://lh3.googleusercontent.com/a-/ALV-UjWHdyeJq4u1Zv91AI0DWMG8UXIYyM9efp6cI-SumtQyPNBLYaCJdQ=w60-h60-p-rp-mo-ba5-br100"
+              style="width: 60px; height: 60px" alt="" />
+            <div class="ml-3">
+              <h6 class="font-weight-semi-bold m-0">Regina Nogueira</h6>
+              <small>
+                <span>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                </span>
+              </small>
             </div>
+            <br />
+          </div>
+          <p class="m-0" style="color: black">
+            Tenho a internet a mais de um ano e tive problemas poucas vezes,
+            solicitei a manutenção e fui atendida dentro dos prazos
+            estabelecidos. Me atende super bem na minha casa.
+          </p>
+        </div>
+        <div class="position-relative bg-secondary p-4">
+          <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0"></i>
+          <div class="d-flex align-items-center mb-3">
+            <img class="img-fluid rounded-circle"
+              src="https://lh3.googleusercontent.com/a/ACg8ocLSKiA5yGgK2KWuSfq5QvXqjhiAC0YAyIk4vs7dlz-ek6n_jQ=w60-h60-p-rp-mo-br100"
+              style="width: 60px; height: 60px" alt="" />
+            <div class="ml-3">
+              <h6 class="font-weight-semi-bold m-0">Keyla Benfica</h6>
+              <small>
+                <span>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                </span>
+              </small>
+            </div>
+            <br />
+          </div>
+          <p class="m-0" style="color: black">
+            Fácil acesso, atendimento excelente!
+          </p>
+        </div>
+        <div class="position-relative bg-secondary p-4">
+          <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0"></i>
+          <div class="d-flex align-items-center mb-3">
+            <img class="img-fluid rounded-circle"
+              src="https://lh3.googleusercontent.com/a-/ALV-UjUN433m7iSPjIYaFiFkN4-ib6VLjn6fSCIf4iDPMTa2IzzazW3U=w60-h60-p-rp-mo-br100"
+              style="width: 60px; height: 60px" alt="" />
+            <div class="ml-3">
+              <h6 class="font-weight-semi-bold m-0">Willian Peixoto</h6>
+              <small>
+                <span>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                  <i class="bx bxs-star" style="color: #ffc400"></i>
+                </span>
+              </small>
+            </div>
+            <br />
+          </div>
+          <p class="m-0" style="color: black">
+            Melhor internet fibra da região 🚀
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonial End -->
+
+  <!-- Planos -->
+  <div class="row" id="planos">
+    <div class="col-md-12 slideshow">
+      <div class="slide-content">
+        <ul>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+          <li>Novas promoções</li>
+          <li>Ofertas Exclusivas</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class=" container mt-4" style="width: 100%;margin-left: auto;margin-right: auto;">
+    <div class="row">
+
+      <div class="col-md-4">
+
+
+        <div class="container askjdnasdnausdhnaiosdbna">
+
+          <div class="card_header_produto"
+            style="height: 300px;width: 300px;margin-top: 15px;margin-left: auto;margin-right: auto;">
+            <img src="img/produto.png" alt="">
+          </div>
+
+          <div class="card_body_produto" style="position: relative;">
+            <div class="produto_header text-center">
+              <h1 style="font-size: 100px;">350</h1>
+              <span
+                style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: linear-gradient(to top, #ff9006, #ffc400); padding: 2px; border-radius: 30px; color: black;margin-left: 25%;margin-top: 18%;">mega</span>
+            </div>
+
+            <div class="container">
+              <ul style="position: relative;margin-left: auto;">
+                <li style="list-style: none;color: black;">
+
+                  <span><i style="color: #ff9006;" class="fa-solid fa-circle-check"></i></span>
+                  WIFI TURBO
+                </li>
+                <li style="list-style: none;color: black;">
+
+
+                  <span><i style="color: #ff9006;" class="fa-solid fa-circle-check"></i></span>
+
+                  100% FIBRA ÓPTICA
+                </li>
+                <li style="list-style: none;color: black;">
+
+                  <span><i style="color: #ff9006;" class="fa-solid fa-circle-check"></i></span>
+
+                  INSTALAÇÃO GRÁTIS
+                </li>
+                <div class="images_container" style="margin-top: 15px;">
+                  <img src="img/ubook_app_produto.png" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
+                </div>
+              </ul>
+              <div class="price " style="position: relative;text-align: center;">
+                <h6 style="color: gray;text-decoration: line-through;">DE R$89,99/MÊS</h4>
+                  <h1 style="color: #ff9006;font-size: 65px;"><span style="color: black;font-size: 25px;">R$
+                    </span>
+                    79
+                    <span style="font-size: 18px;position: absolute;margin-top: 6%;">
+                      <div class="d-block">
+                        <span style="font-weight: bold;">,99</span><br>
+                        <span style="color: black;font-weight: normal;">/mês</span>
+                      </div>
+                    </span>
+                  </h1>
+                  <br>
+                  <span style="color: black;">*Consulte Condições</span>
+                  <div class="button">
+                    <button class="button_price_prod mt-4">
+                      Quero esse plano <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="col-md-4">
+
+
+        <div class="container askjdnasdnausdhnaiosdbna">
+
+          <div class="mais_vendido" style="justify-content: center;display: flex;">
+            <h5
+              style="position: absolute;background-color: #06ff8b;padding: 8px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">
+              Mais Vendido</h5>
+          </div>
+          <div class="card_header_produto"
+            style="height: 300px;width: 300px;margin-top: 15px;margin-left: auto;margin-right: auto;">
+            <img src="img/produto.png" alt="">
+          </div>
+
+          <div class="card_body_produto" style="position: relative;">
+            <div class="produto_header text-center">
+              <h1 style="font-size: 100px;">650</h1>
+              <span
+                style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: linear-gradient(to top, #ff9006, #ffc400); padding: 2px; border-radius: 30px; color: black;margin-left: 25%;margin-top: 18%;">mega</span>
+            </div>
+
+            <div class="container">
+              <ul style="position: relative;margin-left: auto;">
+                <li style="list-style: none;color: black;">
+
+                  <span><i style="color: #ff9006;" class="fa-solid fa-circle-check"></i></span>
+                  WIFI TURBO
+                </li>
+                <li style="list-style: none;color: black;">
+
+
+                  <span><i style="color: #ff9006;" class="fa-solid fa-circle-check"></i></span>
+
+                  100% FIBRA ÓPTICA
+                </li>
+                <li style="list-style: none;color: black;">
+
+                  <span><i style="color: #ff9006;" class="fa-solid fa-circle-check"></i></span>
+
+                  INSTALAÇÃO GRÁTIS
+                </li>
+                <div class="images_container" style="margin-top: 15px;">
+                  <img src="img/deezer_app_produto.png"
+                    style="height: 50px;width: 50px;border-radius: 50%;box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;"
+                    alt="">
+                  <img src="img/150canais_app_produto.png" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
+
+                  <img src="img/looke_app_produto.png" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
+                  <img src="img/2apps_app_produto.png" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
+                </div>
+              </ul>
+              <div class="price " style="position: relative;text-align: center;">
+                <h6 style="color: gray;text-decoration: line-through;">DE R$119,99/MÊS</h4>
+                  <h1 style="color: #ff9006;font-size: 65px;"><span style="color: black;font-size: 25px;">R$
+                    </span>
+                    99
+                    <span style="font-size: 18px;position: absolute;margin-top: 6%;">
+                      <div class="d-block">
+                        <span style="font-weight: bold;">,99</span><br>
+                        <span style="color: black;font-weight: normal;">/mês</span>
+                      </div>
+                    </span>
+                  </h1>
+                  <br>
+                  <span style="color: black;">*Consulte Condições</span>
+                  <div class="button">
+                    <button class="button_price_prod mt-4">
+                      Quero esse plano <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="col-md-4">
+
+
+        <div class="container askjdnasdnausdhnaiosdbna">
+
+          <div class="mais_vendido" style="justify-content: center;display: flex;">
+            <h5
+              style="position: absolute;background-color: #ffd000;padding: 8px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">
+              Melhor Benefício</h5>
+          </div>
+          <div class="card_header_produto"
+            style="height: 300px;width: 300px;margin-top: 15px;margin-left: auto;margin-right: auto;">
+            <img src="img/produto.png" alt="">
+          </div>
+
+          <div class="card_body_produto" style="position: relative;">
+            <div class="produto_header text-center">
+              <h1 style="font-size: 100px;">700</h1>
+              <span
+                style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: linear-gradient(to top, #ff9006, #ffc400); padding: 2px; border-radius: 30px; color: black;margin-left: 25%;margin-top: 18%;">mega</span>
+            </div>
+
+            <div class="container">
+              <ul style="position: relative;margin-left: auto;">
+                <li style="list-style: none;color: black;">
+
+                  <span><i style="color: #ff9006;" class="fa-solid fa-circle-check"></i></span>
+                  WIFI TURBO
+                </li>
+                <li style="list-style: none;color: black;">
+
+
+                  <span><i style="color: #ff9006;" class="fa-solid fa-circle-check"></i></span>
+
+                  100% FIBRA ÓPTICA
+                </li>
+                <li style="list-style: none;color: black;">
+
+                  <span><i style="color: #ff9006;" class="fa-solid fa-circle-check"></i></span>
+
+                  INSTALAÇÃO GRÁTIS
+                </li>
+                <div class="images_container" style="margin-top: 15px;">
+                  <img src="img/max.png" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
+                  <img src="img/deezer_app_produto.png" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
+
+                  <img src="img/looke_app_produto.png" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
+
+                  <img src="img/150canais_app_produto.png" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
+
+
+                  <img src="img/2apps_app_produto.png" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
+
+                </div>
+              </ul>
+              <div class="price " style="position: relative;text-align: center;">
+                <h6 style="color: gray;text-decoration: line-through;">DE R$159,99/MÊS</h4>
+                  <h1 style="color: #ff9006;font-size: 65px;"><span style="color: black;font-size: 25px;">R$
+                    </span>
+                    129
+                    <span style="font-size: 18px;position: absolute;margin-top: 6%;">
+                      <div class="d-block">
+                        <span style="font-weight: bold;">,99</span><br>
+                        <span style="color: black;font-weight: normal;">/mês</span>
+                      </div>
+                    </span>
+                  </h1>
+                  <br>
+                  <span style="color: black;">*Consulte Condições</span>
+                  <div class="button">
+                    <button class="button_price_prod mt-4">
+                      Quero esse plano <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="button_container" style="margin-left: auto;justify-content: center;display: flex;">
+      <a href=""
+        style="background:linear-gradient(to top, #16eee3, #06ff8b);border: none;padding: 10px;border-radius: 30px;font-weight: normal;width: 80%;color: black;text-align: center;text-decoration: none;">
+        Quero ver mais planos
+      </a>
+    </div>
+  </div>
+
+
+
+  <!--Beneficios -->
+
+  <div style="background: linear-gradient(45deg, #f78c00, #ff9007); padding: 15px; height: 450px;" class="mt-5 mb-4" id="beneficios">
+    <div class="container">
+      <div class="text-center pb-2">
+        <span class="mb-4"
+          style="font-size: 25px; color: rgb(255, 255, 255); font-family: Poppins; font-weight: bold;">Benefícios
+          Exclusivos</span>
+        <br />
+      </div>
+
+      <div class="slider_beneficios mt-3" onmousedown="startDrag(event)" onmousemove="dragging(event)"
+        onmouseup="endDrag(event)">
+        <div class="card-bene" style="background-image: url('img/beneficio.png');">
+          <div class="card-content">
+            <h6 style="color: white;">logo</h6>
+            <p style="width: 150px; word-wrap: break-word;color: white;">Descrição do benefício aqui...</p>
+          </div>
+        </div>
+        <div class="card-bene" style="background-image: url('img/beneficio.png');">
+          <div class="card-content">
+            <h6 style="color: white;">logo</h6>
+            <p style="width: 150px; word-wrap: break-word;color: white;">Descrição do benefício aqui...</p>
+          </div>
+        </div>
+        <div class="card-bene" style="background-image: url('img/beneficio.png');">
+          <div class="card-content">
+            <h6 style="color: white;">logo</h6>
+            <p style="width: 150px; word-wrap: break-word;color: white;">Descrição do benefício aqui...</p>
+          </div>
+        </div>
+        <div class="card-bene" style="background-image: url('img/beneficio.png');">
+          <div class="card-content">
+            <h6 style="color: white;">logo</h6>
+            <p style="width: 150px; word-wrap: break-word;color: white;">Descrição do benefício aqui...</p>
+          </div>
+        </div>
+        <div class="card-bene" style="background-image: url('img/beneficio.png');">
+          <div class="card-content">
+            <h6 style="color: white;">logo</h6>
+            <p style="width: 150px; word-wrap: break-word;color: white;">Descrição do benefício aqui...</p>
+          </div>
+        </div>
+        <div class="card-bene" style="background-image: url('img/beneficio.png');">
+          <div class="card-content">
+            <h6 style="color: white;">logo</h6>
+            <p style="width: 150px; word-wrap: break-word;color: white;">Descrição do benefício aqui...</p>
+          </div>
+        </div>
+        <div class="card-bene" style="background-image: url('img/beneficio.png');">
+          <div class="card-content">
+            <h6 style="color: white;">logo</h6>
+            <p style="width: 150px; word-wrap: break-word;color: white;">Descrição do benefício aqui...</p>
+          </div>
+        </div>
+        <div class="card-bene" style="background-image: url('img/beneficio.png');">
+          <div class="card-content">
+            <h6 style="color: white;">logo</h6>
+            <p style="width: 150px; word-wrap: break-word;color: white;">Descrição do benefício aqui...</p>
+          </div>
+        </div>
+
+        <!-- Adicione mais cards conforme necessário -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Indicação -->
+  <div class="d-flex  asdasdasd align-items-center justify-content-between text-light"
+    style="color: rgb(0, 0, 0); padding: 30px; width: 100%;">
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="banner">
+          <!--     <img class="image desktop" src="img/banner/desktop-image.jpg" alt="Desktop Image" /> -->
+          <img class="image desktop" src="img/banner/telefone.webp" style="width: 100%;" alt="Desktop Image" />
+
+          <img class="image mobile" src="img/banner/telefonefixo_mobile.webp" alt="Mobile Image" />
+        </div>
+      </div>
+      <div class="col-md-6" style="text-align: left;">
+        <h6 class="text-orange" style="font-size: 14px;font-weight: 550;">Já é cliente?</h6>
+        <br>
+        <h3 class="oihasdbaskjdh" style="font-weight: 700;font-size: 2rem;">Troque seu plano agora</h3>
+        <br>
+        <h6 class="oihasdbaskjdh">Encontre o melhor plano para você.</h6>
+        <br>
+        <button class="button_primary_yellow">Trocar plano</button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="autoatendimento-container"
+    style="background: url('img/banner/bannerAlt.png');width: 100%;">
+    <div class="container py-5">
+      <h3>Autoatendimento
+      </h3>
+      <h4 style="color: #ffff;">Resolva tudo o que você precisa e tire dúvidas sobre produtos em poucos cliques</h4>
+      <div class="autoatendimento-container-aling">
+        <div class="a">
+          <div>
+            <button class="button_primary_yellow">
+              WhatsApp
+            </button>
+            <button class="button_primary_yellow">
+              Baixar aplicativo
+            </button>
+          </div>
+
+        </div>
+        <div class="cards-container">
+          <div class="card">
+            <div class="blur"></div>
+            <div class="conteiner">
+              Segunda via
+            </div>
+          </div>
+          <div class="card">
+            <div class="blur"></div>
+            <div class="conteiner">
+  
+              Desbloqueio em confiança
+            </div>
+          </div>
+          <div class="card">
+            <div class="blur"></div>
+            <div class="conteiner">
+              Acompanhar solicitações
+  
+            </div>
+          </div>
+          <div class="card">
+            <div class="blur"></div>
+            <div class="conteiner">
+              Ativação de conta online
+  
+            </div>
+          </div>
+
+  
+  
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="d-flex  asdasdasd align-items-center justify-content-between text-light"
+    style="color: rgb(0, 0, 0); padding: 30px; width: 100%;">
+    <div class="row">
+
+      <div class="col-md-6">
+
+        <div class="banner">
+          <!--     <img class="image desktop" src="img/banner/desktop-image.jpg" alt="Desktop Image" /> -->
+          <img class="image desktop" src="img/banner/telefone.webp" style="width: 100%;" alt="Desktop Image" />
+
+          <img class="image mobile" src="img/banner/telefonefixo_mobile.webp" alt="Mobile Image" />
+        </div>
+      </div>
+
+      <div class="col-md-6" style="text-align: left;">
+
+        <h3 style="color: #28c2a0;text-transform: uppercase;font-weight: bold;" class=" mt-3">Telefone fixo <span
+            style="color: rgb(255, 255, 255);background-color: black;padding: 5px;border-radius: 10px;">NEW</span></h3>
+        <div class="askodnasjdasiodhasid" style="color: black;">
+          Ligações ilimitadas para qualquer telefone do Brasil
+        </div>
+        <br>
+        <div class="aling-container-tellfixo"
+          style="border: 1px solid black;padding: 0;border-radius: 5px;user-select: none;">
+          <div class="row">
+            <div class="col-5">
+              <h5 style="padding: 5px;width: 150px;" class="container">
+
+                Aproveite e adicione telefone fixo ilimitado ao seu plano
+              </h5>
+            </div>
+            <div class="col">
+
+              <div
+                style="background: linear-gradient(45deg, #f78800, #ff9006);height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;">
+                <div class="d-block">
+                  <div class="text-center" style="font-weight: bold;color: black;"> por apenas</div>
+
+                  <h1 style="color: hsl(0, 0%, 100%);font-size: 65px;margin-right: 35px;"><span
+                      style="color: black;font-size: 25px;">R$
+                    </span>
+                    <span style="font-weight: bold;">35 </span>
+                    <span style="font-size: 18px;position: absolute;margin-top: 6%;">
+                      <div class="d-block">
+                        <span style="font-weight: bold;">,99</span><br>
+                        <span style="color: black;font-weight: normal;">/mês</span>
+                      </div>
+                    </span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="mt-4 button_mais_telefone">
+          Quero saber Mais
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- telefone fixo -->
+
+  <!-- <a href="/indicacao">
+    <div class="banner container">
+      <div style="justify-content: center;display: flex;">
+        <div style="position: absolute;background-color: white;height: 50px;width: 50px;border-radius: 50%;text-align: center;margin-top: -20px;font-size: 25px;color: #ff9006;align-items: center;justify-content: center;display: flex;">
+          <i class="fa-solid fa-caret-down" style="margin-top: 15px;"></i>
+        </div>
+      </div>
+
+      <div class="text-container-banner position-absolute text-light" style="color: white;padding: 15px;">
+        <h5 style="color: white;" class=" mt-5">Indique um amigo e ganhe com a NEW Internet!</h5>
+        <div class="askodnasjdasiodhasid">
+          Ajude um amigo indicando a melhor internet de Itaúna e ganhe 50% de desconto em uma mensalidade.
+        </div>
+        <button class="mt-4 button_indicar">
+          Indique um amigo
+        </button>
+      </div>
+
+          <img class="image desktop" src="img/banner/indicacao_desktop.png" alt="Desktop Image" style="background-size: contain;border-radius: 15px;" />
+          
+          <img class="image mobile" src="img/banner/indicacao_mobile.png" style="border-radius: 15px;" alt="Mobile Image" />
+
+        </div>
+  </a> -->
+
+
+  <!-- About Start -->
+  <div class="container-fluid banner py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 pb-4 pb-lg-0 ">
+          <div class="image_hbo">
+            <img src="img/max_bannercontainer.jpg" style="border-radius: 5px;" class="image desktop" alt="">
+            <img src="img/max_bannercontainer_mobile.jpg" class="image mobile " alt="">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h5 style="text-align: center;font-weight: bold;">MAX</h5>
+          <div class="carousel_max">
+            <div style="background-image: url(img/max/bactman.png);" class="carousel_max_item">
+            </div>
+            <div style="background-image: url(img/max/scooby-do.png);" class="carousel_max_item">
+            </div>
+            <div style="background-image: url(img/max/supernatura.png);" class="carousel_max_item">
+            </div>
+            <div style="background-image: url(img/max/thelostofus.png);" class="carousel_max_item">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>        
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> -->
+  </div>
+
+  <!-- About End -->
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="container" style="box-shadow: #ffc07375 0px 7px 29px 0px;border-radius: 10px;padding: 20px;">
+          <h2>Fale conosco</h2>
+          <br>
+          <form action="/mail/contact.php" method="post" class="form-contact">
             <div class="row">
-                <div class="col-md-4 mb-5">
-                    <div class="bg-secondary">
-                        <div class="text-center p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>49<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                            </h1>
-                        </div>
-                        <div class="bg-primary text-center p-4">
-                            <h3 class="m-0">Basic</h3>
-                        </div>
-                        <div class="d-flex flex-column align-items-center py-4">
-                            <p>HTML5 & CSS3</p>
-                            <p>Bootstrap 4</p>
-                            <p>Responsive Layout</p>
-                            <p>Compatible With All Browsers</p>
-                            <a href="" class="btn btn-primary py-2 px-4 my-2">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="bg-secondary">
-                        <div class="text-center p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>99<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                            </h1>
-                        </div>
-                        <div class="bg-primary text-center p-4">
-                            <h3 class="m-0">Premium</h3>
-                        </div>
-                        <div class="d-flex flex-column align-items-center py-4">
-                            <p>HTML5 & CSS3</p>
-                            <p>Bootstrap 4</p>
-                            <p>Responsive Layout</p>
-                            <p>Compatible With All Browsers</p>
-                            <a href="" class="btn btn-primary py-2 px-4 my-2">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="bg-secondary">
-                        <div class="text-center p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>149<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                            </h1>
-                        </div>
-                        <div class="bg-primary text-center p-4">
-                            <h3 class="m-0">Business</h3>
-                        </div>
-                        <div class="d-flex flex-column align-items-center py-4">
-                            <p>HTML5 & CSS3</p>
-                            <p>Bootstrap 4</p>
-                            <p>Responsive Layout</p>
-                            <p>Compatible With All Browsers</p>
-                            <a href="" class="btn btn-primary py-2 px-4 my-2">Order Now</a>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-md-12 mb-3">
+                <label for="" style="color: black;">Nome</label>
+                <input type="text" class="form-control" style="border-radius: 30px;" placeholder="Maria">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="" style="color: black;">E-mail</label>
+                <input type="email" class="form-control" style="border-radius: 30px;" placeholder="email@email.com">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="" style="color: black;">WhatsApp</label>
+                <input type="text" id="whatsapp_formatador" class="form-control" style="border-radius: 30px;"
+                  placeholder="(XX) XXXXX XXXX">
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="" style="color: black;">Assunto</label>
+                <select name="" id="" class="form-control" style="border-radius: 30px;">
+                  <option value="" selected disabled></option>
+                  <option value="Dúvidas sobre preço">Dúvidas sobre preço</option>
+                  <option value="Quero contratar um plano">Quero contratar um plano</option>
+                  <option value="Suporte">Suporte</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="" style="color: black;">Mensagem</label>
+                <textarea name="" id="" class="form-control" style="border-radius: 30px;width: 100%;"
+                  rows="5"></textarea>
+              </div>
+              <div class="col-md-12">
+                <button
+                  style="background: linear-gradient(35deg, #ff9006, #ffd519);border: none;padding: 10px;width: 150px;font-weight: bold;border-radius: 30px;width: 100%;">
+                  Enviar
+                </button>
+              </div>
             </div>
+          </form>
+          <br>
+          <button
+            style="border: 1px solid rgb(0, 238, 255);background-color: rgb(245, 245, 245);border-top-right-radius: 50%;border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;height:50px;font-size: 20px; width: 50px;"><i
+              class="fa-brands fa-instagram"></i></button>
+          <button
+            style="border: 1px solid rgb(0, 238, 255);background-color: rgb(245, 245, 245);border-top-right-radius: 50%;border-bottom-left-radius: 50%;border-bottom-right-radius: 50%;height:50px;font-size: 20px;width: 50px;"><i
+              class="fa-brands fa-facebook-f"></i></button>
         </div>
-    </div>
-    <!-- Pricing Plan End -->
 
+      </div>
+      <div class="col-md-6" style="position: relative;">
+        <div style=" margin-left: auto; margin-right: auto; position: relative;width: 80%;">
+          <div class="img_location">
+            <img src="img/localizacao.png"
+              style="border-top-left-radius: 20px;border-top-right-radius: 20px;width: 100%;" alt="">
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center pb-2">
-                <h6 class="text-primary text-uppercase font-weight-bold">Testimonial</h6>
-                <h1 class="mb-4">Our Clients Say</h1>
+          </div>
+          <div class="container" class="jsdhasiudgbauisdbas" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;padding: 10px;">
+            <h1 style="margin-bottom: 1rem;color: #000000;text-align: center;">Itáuna</h1>
+            <div class="mt-3 mb-2 text-dark">R. Josias Machado, 94 - Centro, Itaúna - MG, 35680-046</div>
+            <div class="mt-3 text-dark">
+              <p>Das 08h às 18h de Segunda a Sexta. <br>
+                Das 08h às 13h aos Sábados.
+              </p>
             </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="position-relative bg-secondary p-4">
-                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt="">
-                        <div class="ml-3">
-                            <h6 class="font-weight-semi-bold m-0">Client Name</h6>
-                            <small>- Profession</small>
-                        </div>
-                    </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
-                </div>
-                <div class="position-relative bg-secondary p-4">
-                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" alt="">
-                        <div class="ml-3">
-                            <h6 class="font-weight-semi-bold m-0">Client Name</h6>
-                            <small>- Profession</small>
-                        </div>
-                    </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
-                </div>
-                <div class="position-relative bg-secondary p-4">
-                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" alt="">
-                        <div class="ml-3">
-                            <h6 class="font-weight-semi-bold m-0">Client Name</h6>
-                            <small>- Profession</small>
-                        </div>
-                    </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
-                </div>
-                <div class="position-relative bg-secondary p-4">
-                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" alt="">
-                        <div class="ml-3">
-                            <h6 class="font-weight-semi-bold m-0">Client Name</h6>
-                            <small>- Profession</small>
-                        </div>
-                    </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Testimonial End -->
+
+  </div>
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-7 col-md-6">
-                <div class="row">
-                    <div class="col-md-6 mb-5">
-                        <h3 class="text-primary mb-4">Get In Touch</h3>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                        <div class="d-flex justify-content-start mt-4">
-                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h3 class="text-primary mb-4">Quick Links</h3>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Pricing Plan</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                        </div>
-                    </div>
-                </div>
+  </div>
+
+  <div class="container mt-5" id="faq">
+    <div class="row">
+      <div class="col-md-4">
+        <h3 style="width: 350px;">
+          Dúvidas sobre a promoção de <span style="color: #ff9006;">indicação?</span>
+        </h3>
+        <p style="color: black;" class="mt-1">
+          Se você ainda tem alguma dúvida sobre a promoção de indicação de nossos planos de internet fibra, não hesite
+          em entrar em contato conosco.
+        </p>
+      </div>
+      <div class="col-md-8">
+        <div id="accordionFAQ">
+          <!-- Item 1 -->
+          <div class="card-faq">
+            <div class="card-header" id="headingFAQ">
+              <h5 class="mb-0">
+                <button class="  collapsed" data-toggle="collapse" data-target="#collapseFAQ" aria-expanded="false"
+                  aria-controls="collapseFAQ">
+                  Posso indicar a NEW Internet para mais de um amigo?
+                </button>
+              </h5>
             </div>
-            <div class="col-lg-5 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">Newsletter</h3>
-                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-4">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
+            <div id="collapseFAQ" class="collapse" aria-labelledby="headingFAQ" data-parent="#accordionFAQ">
+              <div class="card-body">
+                Sim, você pode indicar a NEW Internet para mais de um amigo. Agradecemos o seu interesse em compartilhar
+                nossa plataforma com outras pessoas!
+              </div>
             </div>
+          </div>
+
+
+
+          <div class="card-faq">
+            <div class="card-header" id="headingTwoFAQ">
+              <h5 class="mb-0">
+                <button class="  collapsed" data-toggle="collapse" data-target="#collapseTwoFAQ" aria-expanded="false"
+                  aria-controls="collapseTwoFAQ">
+                  Posso indicar qualquer plano para meu amigo?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwoFAQ" class="collapse" aria-labelledby="headingTwoFAQ" data-parent="#accordionFAQ">
+              <div class="card-body">
+                Sim, você pode indicar qualquer plano para seu amigo. A NEW Internet oferece uma variedade de opções
+                para atender às necessidades individuais. Agradecemos o seu interesse em compartilhar nossa plataforma
+                com outras pessoas!
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
-        <div class="row">
-            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="#">Your Site Name</a>. All Rights Reserved. 
-				
-				<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-				Designed by <a href="https://htmlcodex.com">HTML Codex</a>
-                <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                </p>
-            </div>
-            <div class="col-lg-6 text-center text-md-right">
-                <ul class="nav d-inline-flex">
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Help</a>
-                    </li>
-                </ul>
-            </div>
+
+  </div>
+
+  <!-- Footer Start -->
+  <div class="footer mt-5 mb-2" style="color: black;">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="img/logo.png" style="height: 100px;" alt="">
         </div>
+        <div class="col-md-3" style="margin-top: 30px;">
+          <h5>Links rápidos</h5>
+          <hr>
+          <a href="/" style="color: black;">Home</a><br>
+          <a href="https://wa.me/553732269519" style="color: black;">Fale conosco
+          </a><br>
+          <a href="" style="color: #f78800;">Politica de privacidades</a>
+        </div>
+        <div class="col-md-3" style="margin-top: 30px;">
+          <h5>+ Mais</h5>
+          <hr>
+          <a href="https://wa.me/553732269519?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+NEW+Internet+para+empresas."
+            style="color: black;">Para sua empresa</a><br>
+          <a href="http://mks.newfiber.net.br/sac" target="_blank" style="color:#f78800;">Área de clientes
+          </a><br>
+          <a href="/indicacao" style="color: #f78800;">Indique e ganhe</a>
+        </div>
+
+        <div class="col-md-3" style="margin-top: 30px;">
+          <h5>Atendimento</h5>
+          <hr>
+          <a href="maito:contato@newfiber.com.br" style="color: black;">
+            <i class="fa-regular fa-envelope" style="color: #ff9006;font-size: 20px;"></i>
+            contato@newfiber.com.br
+          </a><br>
+          <a href="https://wa.me/553732269519" style="color: black;">
+            <i class="fa-brands fa-whatsapp" style="color: #ff9006;font-size: 20px;"></i>
+            (37) 3226-9519
+
+          </a><br>
+          <a href="tell:03732269519" style="color: black;">
+            <i class="fa-solid fa-phone" style="color: #ff9006;font-size: 20px;"></i>
+            (37) 3226-9519
+
+          </a>
+        </div>
+
+
+      </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  <div class="container text-center">
+    <h1>
+      <span class="text-animation">NEW&nbsp;INTERNET</span>
+    </h1>
+    <span style="color: black;">Site desenvolvido por <a href="https://www.instagram.com/joaoguilherme_soares__/"
+        target="_blank" style="font-weight: bold;color: #7000ff;">João Guilherme</a></span>
+  </div>
+  <br><br>
 
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+  <div class="botao_chat"></div>
 
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
