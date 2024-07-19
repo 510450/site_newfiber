@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links rapidos | NEW</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+
+        body {
+    margin: 0;
+    padding: 0;
+    background: url("background.jpg") ;
+    background-size: cover;
+    color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+
+    height: 100vh; /* Garante que a altura do body seja igual à altura da janela do navegador */
+}
+
+
+
+        p{
+            font-weight: bold;
+        }
+        #page-copied-button {
+            background: rgb(240, 240, 240);
+        }
+
+        header {
+            width: 95%;
+            max-width: 788px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 12px;
+            margin-top: 15px;
+        }
+
+        .share-button {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: #000;
+        }
+
+        .share-button svg {
+            margin-left: 12px;
+            margin-top: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        .container {
+            width: 91%;
+            max-width: 680px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .tile {
+            width: 100%;
+            background: hwb(0 100% 0%);
+            margin: 7px;
+            border-radius: 17px;
+            box-shadow: 0px -3px 15px 0px var(--primaryHi) inset;
+            display: flex;
+            justify-content: space-between;
+            /* backdrop-filter: blur(10px); */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tile::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            transform: scaleY(-1);
+            box-shadow: 0 -5px 15px rgb(0 0 0 / 26%);
+        }
+
+        .tile span {
+            width: 100px;
+            height: 60px;
+            background-color: var(--primaryHi);
+            border-radius: 100%;
+            filter: blur(20px);
+            position: absolute;
+            bottom: -50%;
+            transition: all 0.2s ease;
+        }
+
+        .tile:hover {
+            transform: scale(1.02);
+        }
+
+        .tile-share-button {
+            margin: 8px;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        .tile-share-button svg {
+            margin-left: 12px;
+            margin-top: 10px;
+        }
+
+        .image-container {
+            height: 120px;
+            width: 120px;
+            border-radius: 148px;
+            border: 5px solid black;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            height: 100%;
+        }
+
+        .icon {
+            margin: 4px 8px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .linktree {
+            margin-top: 34px;
+            margin-bottom: 34px;
+            font-weight: bold;
+        }
+
+
+        body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #ff9006;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FF9006;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #FF9006;  /* creates padding around scroll thumb */
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="tile-share-button" id="page-copied-button" link="https://newfiber.com.br/linktree/">
+            <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z"
+                    fill="black"></path>
+            </svg>
+        </div>
+    </header>
+    <div class="container">
+        <div class="image-container">
+            <img src="imagem.png" alt="Abigail white" />
+        </div>
+        <h1>@newfiberfibra</h1>
+
+        <a href="https://newfiber.com.br/#plans" class="tile">
+            <div class="icon">
+
+            </div>
+            <p>Novas promoções</p>
+            <div class="tile-share-button" link="Youtube">
+
+            </div>
+        </a>
+        <span></span>
+        <a href="https://wa.me/553732269519?text=Gostaria+de+saber+sobre+o+Indicou+Ganhou%21" class="tile">
+            <div class="icon">
+
+            </div>
+            <p>Indicou ganhou!</p>
+            <div class="tile-share-button" link="Twitter">
+
+            </div>
+        </a>
+
+        <a href="https://wa.me/553732269519" class="tile">
+            <div class="icon">
+
+            </div>
+            <p>WhatsApp</p>
+            <div class="tile-share-button" link="Instagram">
+
+            </div>
+        </a>
+
+        <a href="https://www.instagram.com/newfiberfibra/" class="tile">
+            <div class="icon">
+
+            </div>
+            <p>Instagram</p>
+            <div class="tile-share-button" link="Fashion Tips">
+                
+            </div>
+        </a>
+
+        <a href="mailto:contato@newfiber.net.br"" class="tile">
+            <div class="icon">
+
+            </div>
+            <p>Envie um E-mail</p>
+            <div class="tile-share-button" link="View Collection">
+
+            </div>
+        </a>
+
+        <a href="https://newfiber.com.br/" class="tile">
+            <div class="icon">
+
+            </div>
+            <p>Visite nosso site</p>
+            <div class="tile-share-button" link="View Collection">
+
+            </div>
+        </a>
+
+    </div>
+
+    <div class="linktree">
+        <a href="https://wa.me/5537999066606" style="color: white;">
+            BY João Guilherme
+        </a>
+    </div>
+
+    <script>
+        const shareButtons = document.querySelectorAll('.tile-share-button')
+
+        async function copyText(e) {
+            e.preventDefault()
+            const link = this.getAttribute('link')
+            console.log(link)
+
+            try {
+                await navigator.clipboard.writeText(link)
+                alert("Texto Copiado: " + link)
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        shareButtons.forEach(shareButton =>
+            shareButton.addEventListener('click', copyText))
+    </script>
+</body>
+
+</html>
