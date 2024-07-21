@@ -3576,7 +3576,7 @@ input[type="button"].btn-block {
 }
 
 .autoatendimento-container .cards-container .card {
-  background-color: rgba(177, 93, 3, 0.9);
+  background: rgba(177, 93, 3, 0.9);
   /* Just an example style */
   padding: 20px;
   border-radius: 8px;
@@ -11481,15 +11481,13 @@ p,
   cursor: grabbing;
   /* Cursor de mãozinha quando está arrastando */
 }
-
 .card-bene {
   flex: 0 0 auto;
   width: 250px;
   height: 350px;
-  /* Ajuste a altura conforme necessário */
   margin-right: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   overflow: hidden;
   scroll-snap-align: start;
   background-size: cover;
@@ -11497,16 +11495,34 @@ p,
 }
 
 .card-bene .card-content {
-  padding: 15px;
-  margin-top: 100%;
-  /* Alinha o conteúdo na parte inferior */
+  margin-top: 96%;
+  height: 150px;
+  background:linear-gradient(to top, #ff9006, #ff9006, #ff900608) ;
   border-radius: 0 0 10px 10px;
+  text-align: center;
   color: white;
+  bottom: 0;
+  word-break: break-all;
 }
 
-.card-bene:hover {
-  transform: scale(1px);
+.card-bene .card-content h6 img {
+  height: 60px;
+  width: 60px;
+  /* background-color: white; */
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/* .card-bene .card-content p {
+  width: 150px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+} */
+
+
+/* .card-bene:hover {
+  transform: scale(1px);
+} */
 
 .askodnasjdasiodhasid {
   margin-top: 20px;
@@ -11563,7 +11579,7 @@ p,
 }
 
 .autoatendimento-container .cards-container .card {
-  background-color: #ffa600;
+  background:linear-gradient(45deg, #f98a00, #d7770059) ;
   /* Just an example style */
   padding: 20px;
   border-radius: 8px;
@@ -11573,7 +11589,15 @@ p,
   overflow: hidden;
   /* Adicionado para ocultar o conteúdo além do cartão */
 }
-
+.bannerMAX{
+  background-image: url('../img/BANNER-TV.webp');
+  background-repeat: no-repeat;
+}
+@media (max-width:800px){
+  .bannerMAX{
+    background-image: none !important;
+  }
+}
 .autoatendimento-container .cards-container .card .blur {
   width: 100%;
   height: 100%;

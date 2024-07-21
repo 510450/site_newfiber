@@ -16,11 +16,12 @@
         body {
     margin: 0;
     padding: 0;
-    background: url("background.jpg") ;
+    background: url("background-desktop.png") ;
     background-size: cover;
     color: rgb(240, 240, 240);
     display: flex;
     align-items: center;
+    overflow-x: hidden;
     flex-direction: column;
 
     justify-content: center;
@@ -29,7 +30,11 @@
     height: 100vh; /* Garante que a altura do body seja igual à altura da janela do navegador */
 }
 
-
+@media (max-width:800px){
+    body{
+        background-image: url("background.jpg") !important;
+    }
+}
 
         p{
             font-weight: bold;
@@ -72,11 +77,13 @@
         h1 {
             font-size: 20px;
             margin-bottom: 30px;
+            color: #000;
         }
 
         a {
             text-decoration: none;
             color: rgb(0, 0, 0);
+
         }
 
         .tile {
@@ -251,8 +258,8 @@ body::-webkit-scrollbar-thumb {
     </div>
 
     <div class="linktree">
-        <a href="https://wa.me/5537999066606" style="color: white;">
-            BY João Guilherme
+        <a href="https://wa.me/5537999066606" style="color: white;text-align: center;display: block;">
+            Developed by <br> <span style="color: black;">João Guilherme</span>
         </a>
     </div>
 
