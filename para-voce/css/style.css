@@ -7,6 +7,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -80,18 +81,25 @@ body {
   text-align: left;
   background-color: #fff;
 }
+
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px;
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: #141414;        /* color of the tracking area */
+  background: #141414;
+  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ff9006;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #141414;;  /* creates padding around scroll thumb */
+  background-color: #ff9006;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #141414;
+  ;
+  /* creates padding around scroll thumb */
 }
 
 
@@ -119,6 +127,7 @@ h6 {
 
 p {
   margin-top: 0;
+  color: #454545;
   margin-bottom: 1rem;
 }
 
@@ -188,6 +197,7 @@ sub {
 sup {
   top: -0.5em;
 }
+
 a {
   color: #ff9006;
   text-decoration: none;
@@ -266,8 +276,7 @@ button {
 }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
 input,
@@ -490,11 +499,14 @@ h6,
   font-weight: 500;
   line-height: 1.2;
   color: #1f1f2e;
+  font-weight: bold !important;
 }
 
 h1,
 .h1 {
   font-size: 2.5rem;
+  font-weight: bold !important;
+
 }
 
 @media (max-width: 1200px) {
@@ -508,6 +520,8 @@ h1,
 h2,
 .h2 {
   font-size: 2rem;
+  font-weight: bold !important;
+
 }
 
 @media (max-width: 1200px) {
@@ -521,6 +535,8 @@ h2,
 h3,
 .h3 {
   font-size: 1.75rem;
+  font-weight: bold !important;
+
 }
 
 @media (max-width: 1200px) {
@@ -534,6 +550,8 @@ h3,
 h4,
 .h4 {
   font-size: 1.5rem;
+  font-weight: bold !important;
+
 }
 
 @media (max-width: 1200px) {
@@ -4973,9 +4991,14 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0);
+  border :none;
 }
+.navbar-light .navbar-toggler:focus{
+  color: rgb(0, 0, 0);
+  border :none;
+}
+
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -11335,13 +11358,14 @@ p,
   color: #ff9006;
 }
 
-.font-w-5{
+.font-w-5 {
   font-weight: 500;
 }
 
-.font-f-poppins{
+.font-f-poppins {
   font-family: Poppins;
 }
+
 .price h1 {
   display: inline-block;
 }
@@ -11424,12 +11448,14 @@ p,
   margin-top: 15px;
   font-family: Poppins;
 }
-.price{
+
+.price {
   display: block;
   font-family: Poppins;
 
   flex-direction: column;
 }
+
 .price h1 {
   color: #ff9006;
   font-family: Poppins;
@@ -11452,7 +11478,7 @@ p,
   margin-top: 6%;
 }
 
-.button_container a{
+.button_container a {
   background: linear-gradient(45deg, #16eee3, #06ff8b);
   border: none;
   padding: 10px;
@@ -11461,11 +11487,11 @@ p,
   color: black;
   text-align: center;
   text-decoration: none;
-  width:100%;
+  width: 100%;
 }
 
 
-.button_container a i{
+.button_container a i {
   margin-left: 5px;
 }
 
@@ -11488,6 +11514,7 @@ p,
   cursor: grabbing;
   /* Cursor de mãozinha quando está arrastando */
 }
+
 .card-bene {
   flex: 0 0 auto;
   width: 250px;
@@ -11504,7 +11531,7 @@ p,
 .card-bene .card-content {
   margin-top: 96%;
   height: 150px;
-  background:linear-gradient(to top, #ff9006, #ff9006, #ff900608) ;
+  background: linear-gradient(to top, #ff9006, #ff9006, #ff900608);
   border-radius: 0 0 10px 10px;
   text-align: center;
   color: white;
@@ -11586,7 +11613,7 @@ p,
 }
 
 .autoatendimento-container .cards-container .card {
-  background:linear-gradient(45deg, #f98a00, #d7770059) ;
+  background: linear-gradient(45deg, #f98a00, #d7770059);
   /* Just an example style */
   padding: 20px;
   border-radius: 8px;
@@ -11596,15 +11623,18 @@ p,
   overflow: hidden;
   /* Adicionado para ocultar o conteúdo além do cartão */
 }
-.bannerMAX{
+
+.bannerMAX {
   background-image: url('../img/BANNER-TV.webp');
   background-repeat: no-repeat;
 }
-@media (max-width:800px){
-  .bannerMAX{
+
+@media (max-width:800px) {
+  .bannerMAX {
     background-image: none !important;
   }
 }
+
 .autoatendimento-container .cards-container .card .blur {
   width: 100%;
   height: 100%;
@@ -11852,11 +11882,13 @@ p,
   width: 100%;
   background-color: #ee8400;
 }
+
 @media (max-width:800px) {
   .containerLinksBanner {
     height: 130px;
   }
 }
+
 .containerLinksBanner ul {
   display: flex;
   align-items: center;
@@ -11873,11 +11905,13 @@ p,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff; /* Cor de fundo do preloader */
+  background-color: #fff;
+  /* Cor de fundo do preloader */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Garante que o preloader fica acima de todo o conteúdo */
+  z-index: 9999;
+  /* Garante que o preloader fica acima de todo o conteúdo */
 }
 
 .spinner {
@@ -11890,7 +11924,9 @@ p,
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .containerLinksBanner li {
@@ -12075,17 +12111,21 @@ p,
   border: 2px solid #ff9006;
   transition: 0.3s;
 }
-.btn-client-area a{
+
+.btn-client-area a {
   color: black;
   text-decoration: none;
 }
-.btn-client-area{
-  background-color:#86d000;
+
+.btn-client-area {
+  background-color: #86d000;
   padding: 10px;
   text-transform: uppercase;
   border-radius: 10px;
+  text-align: center;
 }
-.cardsLinkHelp .card{
+
+.cardsLinkHelp .card {
   text-align: left;
   box-shadow: 0px 0px 50px 2px rgba(0, 0, 0, 0.03);
   border: none;
@@ -12095,16 +12135,19 @@ p,
   height: 150px;
   margin-bottom: 20px;
 }
-.cardsLinkHelp .card .link{
+
+.cardsLinkHelp .card .link {
   bottom: 10px;
   color: blue;
   position: absolute;
 }
-.cardsLinkHelp .card .link a{
+
+.cardsLinkHelp .card .link a {
   color: #0B53C9;
   text-decoration: none;
 }
-.cardsLink .card{
+
+.cardsLink .card {
   box-shadow: 0px 0px 50px 2px rgba(0, 0, 0, 0.03);
   border: none;
   text-align: center;
@@ -12116,44 +12159,78 @@ p,
 }
 
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
-.float:hover{
+
+.float:hover {
   color: white;
 }
-.my-float{
-	margin-top:16px;
+
+.my-float {
+  margin-top: 16px;
 }
-.separator{
+
+.separator {
   display: flex;
   align-items: center;
   user-select: none;
 }
-.separator div:nth-child(1){
+
+.separator div:nth-child(1) {
   height: 5px;
   width: 20px;
   background-color: #cc7306;
 }
-.separator div:nth-child(2){
+
+.separator div:nth-child(2) {
   height: 5px;
   width: 50px;
   margin-left: 10px;
   background-color: #cc7306;
 }
-.separator div:nth-child(3){
+
+.separator div:nth-child(3) {
   margin-left: 10px;
   letter-spacing: 1px;
   color: #cc7306;
+}
+
+.buttonContainerLINKS {
+  margin-top: 10px;
+  display: block;
+  flex-direction: column;
+}
+
+.buttonContainerLINKS button {
+  background-color: #ff9006;
+  border: none;
+  font-family: "Comfortaa", sans-serif;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.buttonContainerLINKS button a {
+  color: black;
+  text-decoration: none;
+}
+
+.buttonContainerLINKS button:nth-child(1) {
+  margin-top: 10px !important;
+}
+
+.imagem-aling img {
+  width: 100%;
+  background-size: cover;
 }
