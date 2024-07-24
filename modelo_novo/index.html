@@ -170,30 +170,7 @@
   <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
         Abrir Modal
       </button> -->
-      <div class="container-fluid bg-dark">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center text-white">
-                    <small><a style="color: white;" href="tell: 3732269519">037 3226-9519</a></small>
-                    <small class="px-3">|</small>
-                    <small><a href="maito:contato@newfiber.com.br" style="color: white;">contato@newfiber.com.br</a></small>
-                </div>
-            </div>
-            <!-- <div class="col-lg-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div> -->
-        </div>
-    </div>
+
   <div id="navigation" class="xiasdaksdjuigaysdvasjkdn">
 
     <a class="d-block nav-item  nav-item-page" data-target="home">
@@ -1193,21 +1170,20 @@
           <form action="/mail/contact.php" method="post" class="form-contact">
             <div class="row">
               <div class="col-md-12 mb-3">
-                <label for="" style="color: black;">Nome</label>
-                <input type="text" class="form-control" style="border-radius: 30px;" placeholder="Maria">
+                <label for="nome" style="color: black;">Nome</label>
+                <input type="text" name="nome" class="form-control" style="border-radius: 30px;" placeholder="Maria">
               </div>
               <div class="col-md-6 mb-3">
-                <label for="" style="color: black;">E-mail</label>
-                <input type="email" class="form-control" style="border-radius: 30px;" placeholder="email@email.com">
+                <label for="email" style="color: black;">E-mail</label>
+                <input type="email" name="email" class="form-control" style="border-radius: 30px;" placeholder="email@email.com">
               </div>
               <div class="col-md-6 mb-3">
-                <label for="" style="color: black;">WhatsApp</label>
-                <input type="text" id="whatsapp_formatador" class="form-control" style="border-radius: 30px;"
-                  placeholder="(XX) XXXXX XXXX">
+                <label for="whatsapp" style="color: black;">WhatsApp</label>
+                <input type="text" name="whatsapp" id="whatsapp_formatador" class="form-control" style="border-radius: 30px;" placeholder="(XX) XXXXX XXXX">
               </div>
               <div class="col-md-12 mb-3">
-                <label for="" style="color: black;">Assunto</label>
-                <select name="" id="" class="form-control" style="border-radius: 30px;">
+                <label for="assunto" style="color: black;">Assunto</label>
+                <select name="assunto" id="" class="form-control" style="border-radius: 30px;">
                   <option value="" selected disabled></option>
                   <option value="Dúvidas sobre preço">Dúvidas sobre preço</option>
                   <option value="Quero contratar um plano">Quero contratar um plano</option>
@@ -1216,15 +1192,11 @@
                 </select>
               </div>
               <div class="col-md-12 mb-3">
-                <label for="" style="color: black;">Mensagem</label>
-                <textarea name="" id="" class="form-control" style="border-radius: 30px;width: 100%;"
-                  rows="5"></textarea>
+                <label for="mensagem" style="color: black;">Mensagem</label>
+                <textarea name="mensagem" id="" class="form-control" style="border-radius: 30px;width: 100%;" rows="5"></textarea>
               </div>
               <div class="col-md-12">
-                <button
-                  style="background: linear-gradient(35deg, #ff9006, #ffd519);border: none;padding: 10px;width: 150px;font-weight: bold;border-radius: 30px;width: 100%;">
-                  Enviar
-                </button>
+                <button style="background: linear-gradient(35deg, #ff9006, #ffd519);border: none;padding: 10px;width: 150px;font-weight: bold;border-radius: 30px;width: 100%;">Enviar</button>
               </div>
             </div>
           </form>
